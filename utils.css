@@ -1,0 +1,55 @@
+.light-mode{
+    --clr-light:#000000 ;
+    --clr-dark:#f1f5f9;
+    --clr-slate400:#1e293b;
+    --clr-slate600:#1e293b;
+    --clr-slate800:#1e293b;
+   
+   
+    .featured__img-wrapper{
+    position: relative;
+ 
+}
+.featured__img-wrapper img{
+    width: 700px;
+}
+.featured__img-wrapper::after{
+    content: '';
+    background-color: rgba(79, 70, 229, 0.3);
+    width: 100%;
+    height: 100%;
+    position:absolute ;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.featured__img-wrapper:hover::after{
+    background-color: rgba(79, 70, 229, 0.05) ;
+}
+
+.work__img-wrapper{
+    position: relative;
+ 
+}
+.work__img-wrapper img{
+    width: 700px;
+}
+.work__img-wrapper::after{
+    content: '';
+    background-color: rgba(79, 70, 229, 0.4);
+    width: 100%;
+    height: 100%;
+    position:absolute ;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.work__img-wrapper:hover::after{
+    background-color:rgba(79, 70, 229, 0.15);
+}
+    
+}
